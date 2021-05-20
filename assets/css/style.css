@@ -1,0 +1,205 @@
+html,
+body{
+    height: 100%;
+    border: 0px;
+    margin: 0px;
+
+}
+
+body{
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    
+}
+
+.App-container{
+    /* border: 2px dashed; */
+    grid-column: 3/-3;
+    /* display: flex;
+    flex-direction: column;
+     */
+     display: grid;
+     grid-template-rows: 5% auto;
+     border: 1px solid;
+     background-color: rgb(3, 12, 26);
+
+}
+
+
+h2{
+    padding: 0px;
+    margin: 0px;
+}
+
+.header{
+    /* border: 2px dashed; */
+    display: grid;
+    background-color: rgb(13, 28, 43);
+    color: rgb(199, 198, 198);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* 
+inside header */
+
+header-top{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+
+    
+
+}
+
+logo{
+    font-size: 0.7rem;
+    flex:1 0 auto;
+    padding-left: 15px;
+
+}
+.sideMenu{
+    /* border: 2px dashed; */
+    justify-self: flex-end;
+    flex: 1 0 auto;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+
+    
+}
+.sideMenu>span>i{
+    font-size:0.9rem;
+    
+}
+#menu{
+    width: 50px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu>div{
+    height: 4px;
+    width: 4px;
+    background-color: white;
+    border-radius: 50%;
+    margin:1.4px;
+    
+    
+    
+
+    
+}
+
+header-bottom{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+
+}
+header-bottom>div{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+
+header-bottom>div:nth-child(1){
+    
+    align-self: flex-end;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+header-bottom>div:nth-child(1)>span:nth-child(2){
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    margin-left: 4%;
+    padding: 1px;
+
+}
+
+header-bottom>div:nth-child(2){
+    
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+
+header-bottom>div:nth-child(3){
+    
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.chat-container{
+    
+    display: grid;
+    grid-template-rows: repeat(20,100px);
+}
+
+/* 
+inside chat */
+
+.single-chat{
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+
+}
+
+.profile-Icon{
+    /* border: 2px dashed; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+}
+.chat-name{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chat-notification{
+    /* border: 2px dashed; */
+}
+
+.profile-Icon>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.chat-messagePreview{
+    color: rgb(167, 164, 164);
+    font-size: 0.8rem;
+}
+
+.datePreview{
+    color: rgb(0, 255, 128);
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10px;
+}
