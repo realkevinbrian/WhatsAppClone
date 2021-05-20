@@ -1,0 +1,81 @@
+
+
+
+
+@media only screen and (min-width : 100px) and (max-width:478px){
+    .App-container{
+        grid-column: 1/-1;
+         display: grid;
+         grid-template-rows: 5% auto;
+         border: 1px solid;
+         background-color: rgb(3, 12, 26);
+         
+    
+    }
+    #startchatBtn{
+        transform: translateX(275px) translateY(550px);
+    }
+    
+    
+}
+@media only screen and (min-width : 480px) {
+    .App-container{
+        grid-column: 2/-2;
+         display: grid;
+         grid-template-rows: 5% auto;
+         border: 1px solid;
+         background-color: rgb(3, 12, 26);
+
+    
+    }
+    #startchatBtn{
+        transform: translateX(350px) translateY(600px);
+    }
+    
+
+}
+@media only screen and (min-width : 700px) {
+    .App-container{
+        grid-column: 4/-4;
+         display: grid;
+         grid-template-rows: 5% auto;
+         border: 1px solid;
+         background-color: rgb(3, 12, 26);
+    
+    }
+    #startchatBtn{
+        transform: translateX(350px) translateY(600px);
+    }
+    
+   
+
+}
+@media only screen and (min-width : 992px) {
+    .App-container{
+        grid-column: 3/-3;
+         display: grid;
+         grid-template-rows: 5% auto;
+         border: 1px solid;
+         background-color: rgb(3, 12, 26);
+    
+    }
+    
+    
+    
+
+}
+@media only screen and (min-width : 1200px) {
+    .App-container{
+        grid-column: 4/-4;
+         display: grid;
+         grid-template-rows: 5% auto;
+         border: 1px solid;
+         background-color: rgb(3, 12, 26);
+    
+    }
+    #startchatBtn{
+        transform: translateX(820px) translateY(600px);
+    }
+    
+    
+}
