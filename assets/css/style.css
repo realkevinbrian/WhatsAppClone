@@ -42,13 +42,10 @@ body{
      background-color: rgb(3, 12, 26);
 
 }
-
-
 h2{
     padding: 0px;
     margin: 0px;
 }
-
 .header{
     /* border: 2px dashed; */
     display: grid;
@@ -199,8 +196,18 @@ inside chat */
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
+    
 
 }
+
+
+/* on hover =>single chat */
+.single-chat:hover{
+    background-color: rgba(1, 16, 36, 0.459);
+    cursor: pointer;
+}
+
+
 
 .profile-Icon{
     /* border: 2px dashed; */

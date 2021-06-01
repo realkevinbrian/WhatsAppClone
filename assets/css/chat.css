@@ -1,0 +1,65 @@
+span>i{
+    color: white;
+}
+
+#AppContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:7%;
+}
+
+.chatInfo{
+    display: flex;
+    background-color: rgb(2, 25, 56);
+    height: 50px;
+    align-items: center;
+    /* position: fixed;
+    width: 415px; */
+    
+    
+}
+.backArrow{
+    padding: 5px;
+}
+
+.chatImage{
+    
+    flex:auto;
+    display: flex;
+    align-items: center;
+    color: white;
+    
+}
+
+.chatImage > img {
+    width: 35px;
+    height: 35px;
+    border-radius: 80%;
+    margin-right: 10px;
+}
+
+.chatActions{
+    flex: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.chatSystem{
+    background-color: rgba(7, 4, 4, 0.472);
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 2px dashed white;
+}
+
+.message{
+    color: white;
+    /* border: 2px solid; */
+    height: 80px;
+    width: 50%;
+    margin: 10px;
+    border-radius: 30px 10px;
+    text-align: center;
+    background-color: rgb(4, 90, 148);
+    display: flex;
+}
