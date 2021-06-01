@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whatsapp Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/chat.css">
     <link rel="stylesheet" href="./assets/css/devices.css">
@@ -15,7 +16,7 @@
 
     <div class="App-container" id="AppContainer">
         <div class="chatInfo">
-            <div class="backArrow">
+            <div class="backArrow" id="backBtn">
                 <span><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
             </div>
 
@@ -51,12 +52,53 @@
 
         </div>
 
+        <div class="WriteMessage">
+
+            <div class="messageContainer">
+
+                <div class="emoji">
+                    <span>
+                        <i class="far fa-smile-beam"></i>
+                    </span>
+                </div>
+
+                <div class="input">
+                    <input type="text" name="" id="">
+                    
+                    <div class="icons">
+                        <span>
+                            <i class="fas fa-paperclip"></i>
+                        </span>
+    
+                        <span>
+                            <i class="fas fa-camera"></i>
+                        </span>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+
+            <div class="sendBtn">
+                <button class="btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
     </div>
 
 
     <!-- <div id="startchatBtn">GET CHAT</div> -->
     <script src="./assets/js/App.js"> 
-
+    </script>
+    <script>   
+    const backBtn = document.getElementById("backBtn");
+    backBtn.addEventListener("click", elem=>{
+        window.history.back();
+    })
     </script>
 </body>
 </html>

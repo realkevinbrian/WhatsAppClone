@@ -57,7 +57,7 @@ function singleChat(name,photo,preview){
                     <img src="./assets/images/${photo}" alt="profile Picture">
                 </div>
 
-                <div class="chat-notification">
+                <div class="chat-notification" id="showChat">
                     <div class="chat-name">
                         ${name}
                     </div>
